@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "typeinfo": "cpp"
+    },
+    "files.exclude": {},
+    // "git.ignoredRepositories": [
+    //     "esp-idf"
+    // ]
+}

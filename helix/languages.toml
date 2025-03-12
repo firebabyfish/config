@@ -1,0 +1,18 @@
+[language-server.clangd]
+command = "clangd"
+args = ["--compile-commands-dir=build"]
+
+[[language]]
+name = "c"
+scope = "source.c"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "clang-format" }
+comment-token = "// "
+
+[[language]]
+name = "cpp"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "clang-format" }
+comment-token = "// "

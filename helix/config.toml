@@ -1,0 +1,131 @@
+theme = "zed_onedark"
+ 
+
+[editor]
+scrolloff = 10
+mouse = true
+middle-click-paste = true
+scroll-lines = 7
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+continue-comments = false
+auto-completion = true
+path-completion = true
+auto-format = true
+idle-timeout = 250
+completion-timeout = 5
+preview-completion-insert = true
+true-color = true
+completion-replace = true
+rulers = [120]
+bufferline = "multiple"
+color-modes = true
+clipboard-provider = "x-clip"
+
+
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "file-modification-indicator"
+]
+right = [
+  "spinner",
+  "spacer",
+  "workspace-diagnostics",
+  "separator",
+  "spacer",
+  "diagnostics",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+# [editor.indent-guides]
+# character = "╎"
+# render = true
+
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+display-inlay-hints = true
+
+
+[editor.inline-diagnostics]
+cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+
+
+[editor.file-picker]
+hidden = false
+
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+C-b = "move_char_left"
+C-f = "move_char_right"
+
+
+[keys.normal]
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+"[" = { b = ":bp" }
+"]" = { b = ":bn" }
+"S-j" = [
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+]
+"S-k" = [
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+]
+"A-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_down",
+  "paste_before",
+]
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+
+[keys.select]
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c99",
+            "compilerPath": "/home/lhy/toolchain/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc",
+            "cppStandard": "c++11",
+            "defines": [],
+            "forcedInclude": [],
+            "includePath": [],
+            "intelliSenseMode": "linux-gcc-arm",
+            "name": "config_temp"
+        }
+    ],
+    "version": 4
+}
